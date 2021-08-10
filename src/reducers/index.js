@@ -1,5 +1,11 @@
 import { combineReducers } from 'redux';
 
 import movieReducer from './movieReducer';
+import businessReducer from './businessReducer';
 
-export default movieReducer;
+const reducer = combineReducers({
+    movie: movieReducer, 
+    business: businessReducer,
+}); 
+
+export default reducer; 
